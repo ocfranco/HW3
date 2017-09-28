@@ -48,12 +48,12 @@
                 <tr>
                     <td>Gross Pay</td>
                     <td>
-                    
+                    <%double grossPay;%>
                       <% if(hoursWorked > 40){%>
-                              grossPay = <%=(hourlyPay * 40) + ((hoursWorked -40)*(1.5 * hourlyPay))%>
+                             <%=grossPay =(hourlyPay * 40) + ((hoursWorked -40)*(1.5 * hourlyPay))%>
                       
                       <% } else {%> 
-                              grossPay = <%=(hoursWorked * hourlyPay)%>    
+                           <%=grossPay=(hoursWorked * hourlyPay)%>    
                        <% } %>
  
                     </td>
@@ -67,12 +67,23 @@
               
                 <tr>
                     <td>Pre-tax Pay</td>
-                    <td></td>
+                   
+                    <td><%double pretaxPay;%>
+                        <%=pretaxPay=(grossPay - pretaxDeduct) %></td>
                 </tr>              
                
                 <tr>
                     <td>Tax Amount</td>
-                    <td></td>
+                    <td>
+                        <%double taxAmount;%>
+                      <% if(pretaxPay > 500){%>
+                             <%=taxAmount=(pretaxPay * 0.22)%>
+                      
+                      <% } else {%> 
+                           <%=taxAmount=(pretaxPay * 0.18)%>   
+                       <% } %>
+ 
+                    </td>
                 </tr>
                
                 <tr>
@@ -82,12 +93,14 @@
                 
                 <tr>
                     <td>Post-tax Pay</td>
-                    <td></td>
+                    <td>
+                        <%double posttaxPay;%>
+                        <%=posttaxPay=grossPay - taxAmount %></td>
                 </tr>
                 
                 <tr>
                     <td>Net Pay</td>
-                    <td></td>
+                    <td><%= posttaxPay - posttaxDeduct %></td>
                 </tr>
             
             </tbody>
