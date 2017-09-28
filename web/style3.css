@@ -1,0 +1,43 @@
+body {
+	color: white; 
+	background-color:#dd77f4; 
+	font-size:14pt; 
+	font-family: arial;
+	}
+
+  table.center {
+    margin-left:auto; 
+    margin-right:auto;
+    background-color: #77baf4;
+    
+  }
+  
+
+.buttons {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+}
+h1 {text-align: center;}
+
+hr {color: white;
+    }
+    
+.info {
+        width: 50%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 15px;
+        border : 10px;
+        border-color: yellowgreen;
+    }
+    
+    .index {
+        width: 50%;
+	margin: 0 auto;
+	text-align: left;
+	padding: 15px;
+        border: 10px;
+        border-color: yellowgreen;
+    }

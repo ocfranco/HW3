@@ -5,6 +5,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Salary Information</title>
+        <link href="style3.css" rel="stylesheet" type="text/css"/>
     </head>
     
     <%
@@ -14,10 +15,11 @@
         double posttaxDeduct = Double.parseDouble (request.getParameter("posttaxdeduct"));
         
         %>
+       <div class ="info">
     <body>
         <h1>Salary Information</h1>
-        
-        <table border =3px>
+        <hr>
+        <table border ='3px solid green' class='center'>
             <tbody>
                 <tr>
                     <td>Total Hours Worked </td>
@@ -105,5 +107,6 @@
             
             </tbody>
         </table>
+        </div>
     </body>
 </html>

@@ -9,15 +9,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+       
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Simple Salary Calculator</title>
+        <link href="style3.css" rel="stylesheet" type="text/css"/>
     </head>
-  
+  <div class ="index">
     <body>
         <h1>Simple Salary Calculator</h1>
-        
+        <hr>
         <form name="hwform" action="results.jsp" method="post">
-            <table>
+            <table border='3px solid green' class='center'>
                 <tbody>
                     <tr>
                         <td>Hours Worked</td>
@@ -41,12 +43,14 @@
                   
                 </tbody>
             </table>
-            
+       <div class ='buttons'>
             <input type="reset" value="Clear" id="clear">
             <input type="submit" value="Submit" id="submit">
+       </div>
         </form>
           
    
             
     </body>
+  </div>
 </html>
