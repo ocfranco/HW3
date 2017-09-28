@@ -3,40 +3,40 @@
     Created on : 27-Sep-2017, 18:34:38
     Author     : Orestes Franco
 --%>
-<%@page import ="java.util.Date" %>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@page import="java.text.SimpleDateFormat" %>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simple Form Demo</title>
+        <title>Simple Salary Calculator</title>
     </head>
   
     <body>
-        <h1>Simple Form Demonstration</h1>
+        <h1>Simple Salary Calculator</h1>
         
         <form name="hwform" action="results.jsp" method="post">
             <table>
                 <tbody>
                     <tr>
-                        <td>First Name</td>
-                        <td><input type ="text" name="first" value="" size="50"</td>
+                        <td>Hours Worked</td>
+                        <td><input type ="text" name="hoursworked" value="" size="50" required></td>
                     </tr>
                     
                     <tr>
-                        <td>Last Name</td>
-                        <td><input type ="text" name="last" value="" size="50"</td>
+                        <td>Hourly Pay</td>
+                        <td><input type ="text" name="hourlypay" value="" size="50" required></td>
                     </tr>
                     
                      <tr>
-                        <td>Email</td>
-                        <td><input type ="text" name="email" value="" size="50"</td>
+                        <td>Pre-tax Deductions</td>
+                        <td><input type ="text" name="pretaxdeduct" value="" size="50" required></td>
                      </tr>  
 
                      <tr>                      
-                        <td>Age</td>
-                        <td><input type ="text" name="age" value="" size="50"</td>
+                        <td>Post-tax Deductions</td>
+                        <td><input type ="text" name="posttaxdeduct" value="" size="50" required></td>
                     </tr>
                   
                 </tbody>
